@@ -9,5 +9,9 @@
   "private": true,
   "dependencies": {
     "netlify-lambda": "^1.1.1"
+  },
+  "scripts": {
+    "serve": "netlify-lambda serve src",
+    "build": "netlify-lambda build src"
   }
 }
