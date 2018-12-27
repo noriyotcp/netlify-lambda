@@ -1,0 +1,13 @@
+{
+  "name": "netlify-lambda",
+  "version": "1.0.0",
+  "description": "Example for Netlify Lambda Functions",
+  "main": "index.js",
+  "repository": "git@github.com:noriyotcp/netlify-lambda.git",
+  "author": "noriyotcp <noriyo.akita@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "netlify-lambda": "^1.1.1"
+  }
+}
