@@ -1,3 +1,13 @@
-exports.handler = function (event, context, callback) {
-  callback(null, { statusCode: 200, body: 'Hello, World' })
-}
+const bodyParser = require('body-parser')
+const express = require('express')
+const serverless = require('serverless-http')
+
+const app = express()
+
+const router = express.Router()
+router.get('/', (req, res) => res.status(200).json({ body: 'Hello, World' }))
+
+app.use(bodyParser.json())
+app.use('/.netlify/functions/hello', router)
+
+exports.handler = serverless(app)

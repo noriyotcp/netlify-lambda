@@ -7,8 +7,12 @@
   "author": "noriyotcp <noriyo.akita@gmail.com>",
   "license": "MIT",
   "private": true,
-  "dependencies": {
-    "netlify-lambda": "^1.1.1"
+  "dependencies": {},
+  "devDependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "netlify-lambda": "^1.1.1",
+    "serverless-http": "^1.8.0"
   },
   "scripts": {
     "serve": "netlify-lambda serve src",

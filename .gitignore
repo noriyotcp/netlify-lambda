@@ -61,4 +61,4 @@ typings/
 .next
 
 # Netlify Lambda Functions
-functions
+functions/
